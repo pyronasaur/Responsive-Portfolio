@@ -1,0 +1,209 @@
+body{
+    background-image: url("../images/memphis-mini.png");
+    background-origin: border-box;
+}
+/* 
+* Set base font family for paragraph
+*/
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-indent: 50px;
+    color: #777777;
+}
+/* 
+* Remove hyperlink underline
+*/
+a{
+    text-decoration: none;
+    color: #777777;
+}
+/* 
+* Add flex layout to header and footer class
+*/
+.head-foot{ /* */
+    display: flex;
+}
+/* 
+* Add flex from parent to divs
+*/
+.head-foot > div {
+    flex: 1;
+}
+/* 
+* Do the same flex setup with inner block to auto-size h1 width in header
+*/
+.name-block{
+    display: flex;
+}
+/**/
+.name-block > div {
+    flex: 1;
+}
+
+.teal-back{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+}
+
+.teal-text{
+    color: #4aaaa5;
+}
+
+.reg-text{
+    color: #777777;
+    border: 1px solid #cccccc;
+}
+
+.form-header{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    margin: 0px;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+/* 
+* set properties of nav menu list items
+*/
+.nav-li{
+    float: right;
+    margin: 5%;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;    
+}
+
+.text-form{
+    border-color: #ffffff;
+}
+
+.form-div{
+    padding-bottom: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px;
+}
+
+#main-header{
+    margin: 0%;
+    padding: 19px;
+}
+
+#nav-header{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #cccccc;
+    background-color: #ffffff
+}
+
+#footer{
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;
+    border-color: #4aaaa5;
+    background-color: #666666;
+}
+
+#main-content{
+    background-color:#dddddd;
+    border-color: #dddddd;
+    background-image: url("../images/memphis-mini.png");
+    background-origin: border-box;
+    height:960px;
+}
+
+#border-div{
+    margin: 20px 100px;
+    background-color: #ffffff;
+    height:90%;
+    border: 1px solid #cccccc;
+
+}
+
+#content-header{
+    padding: 16px 10px;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    margin: 0px 5% 0px 5%;
+    border-color: #dddddd;
+}
+
+#content-div{
+    padding: 5%;
+}
+
+#me-pic{
+    float: left;
+    padding: 0px 15px 15px 0px;
+}
+
+#nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+#copyright{
+    color: #ffffff;
+    font-size: 6pt;
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #submit-btn{
+      border: 0px;
+      width: 9%;
+      height: 25px;
+  }
+
+  /*
+  These rules take effect when the browser's width
+  is either 980px or less.
+*/
+@media screen and (max-width: 980px) {
+    /* The body's bg color will be #333 */
+    body {
+      background-color: #333;
+    }
+  
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 800px;
+    }
+}
+
+  /*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    body {
+      background-color: #333;
+    }
+  
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 600px;
+    }
+}
+
+  /*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+@media screen and (max-width: 640px) {
+    /* The body's bg color will be #333 */
+    body {
+      background-color: #333;
+    }
+  
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 500px;
+    }
+}

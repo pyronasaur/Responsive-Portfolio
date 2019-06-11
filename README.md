@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive-Portfolio using bootstrap
+# Basic-Portfolio
+This repository is for storing my basic portfolio website.
